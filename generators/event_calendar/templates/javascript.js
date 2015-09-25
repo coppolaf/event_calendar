@@ -3,8 +3,9 @@
  * Handles for when events span rows, or don't have a background color
  */
 Event.observe(window, "load", function() {
-  var highlight_color = "#2EAC6A";
-  
+  var highlight_color = "#6ABEFF";
+  var bg_color = null;
+
   // highlight events that have a background color
   $$(".ec-event-bg").each(function(ele) {
     ele.observe("mouseover", function(evt) {
@@ -19,7 +20,7 @@ Event.observe(window, "load", function() {
       $("ec-"+event_class_name+"-"+event_id).setStyle({ backgroundColor: event_color });
     });
   });
-  
+
   // highlight events that don't have a background color
   $$(".ec-event-no-bg").each(function(ele) {
     ele.observe("mouseover", function(evt) {
