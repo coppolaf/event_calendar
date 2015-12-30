@@ -23,7 +23,7 @@ module EventCalendar
     #     Height could get added if a day has too many event's to fit.
     # :day_names_height => 18 # Height of the day names table (included in the above 'height' option)
     # :day_nums_height => 18 # Height of the day numbers tables (included in the 'height' option)
-    # :event_height => 18 # Height of an individual event row
+    # :event_height => 22 # Height of an individual event row
     # :event_margin => 1 # Spacing of the event rows
     # :event_padding_top => 1 # Padding on the top of the event rows (increase to move text down)
     #
@@ -67,7 +67,7 @@ module EventCalendar
         :height => 500,
         :day_names_height => 18,
         :day_nums_height => 18,
-        :event_height => 18,
+        :event_height => 22,
         :event_margin => 1,
         :event_padding_top => 2,
 
